@@ -1,0 +1,29 @@
+{% comment %}
+
+Large image element, set to 600x400px.
+
+Placeholder element is laoded throught the `https://placehold.it/` service.
+
+Inputs:
+
+mcedit: Needed for mailchimp to properly recognize editable regions in the template. Needs to be unique for each section.
+
+{% endcomment %}
+
+<!-- START 600x400 Image =================================================== -->
+
+<tr>
+  <td align="center" style="padding-top: 0; padding-right: 0; padding-bottom: 0; padding-left: 0;">
+    <table role="presentation" class="m-width100" width="{{ include.width }}" height="38" border="0" align="{{ include.align | default: center }}" cellpadding="0" cellspacing="0" style="width:600px; min-width:600px; max-width:600px; text-align: center; padding-top: 0; padding-right: 0; padding-bottom: 0; padding-left: 0;">
+      <tr>
+        <td class="m-hero" style="font-size: 0; line-height: 0;">
+
+          <img mc:edit="{{ include.mcedit }}" src="https://placehold.it/600x400" width="600" height="400" alt="Add a short, unique description of this image's content" class="m-hero" border="0" style="font-family: 'proximanova', Arial, sans-serif; color: #333333; background-color: #ffffff; font-size: 16px; line-height: 20px;" />
+
+        </td>
+      </tr>
+    </table>
+  </td>
+</tr>
+
+<!-- END 600x400 Image ===================================================== -->

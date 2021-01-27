@@ -1,0 +1,26 @@
+{% comment %}
+
+Main CTA button element
+
+Inputs:
+
+content: Default is "Unique and descriptive CTA".
+mcedit: Needed for mailchimp to properly recognize editable regions in the template. Needs to be unique for each section.
+
+{% endcomment %}
+
+<!-- START CTA Button ====================================================== -->
+<tr>
+  <td mc:hideable align="left" style="padding-top: 20px; padding-right: 0; padding-bottom: 0; padding-left: 0;">
+    <table role="presentation" cellpadding="0" cellspacing="0" style="border-spacing:0;" class="m-width100">
+      <tr>
+        <td mc:edit="{{ include.mcedit }}" style="background-color: {{ page.main-color }}; padding: 15px 30px 15px 30px; border-bottom: 3px solid {{ page.alt-color }};text-transform:uppercase; line-height:150%;" align="center" class="CTA-red">
+          <span style="color: #ffffff; font-size: 17px; text-align: center; text-decoration: none; font-family: 'proximanova',Helvetica,Arial,sans-serif;">
+            {{ include.content | default: "Unique and descriptive CTA" }}
+          </span>
+        </td>
+      </tr>
+    </table>
+  </td>
+</tr>
+<!-- END CTA Button ======================================================== -->

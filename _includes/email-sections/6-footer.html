@@ -1,0 +1,153 @@
+<!--****************************************************************************
+================================================================================
+
+START Footer
+
+================================================================================
+*****************************************************************************-->
+<table role="presentation" class="footer" width="100%" border="0" align="center" cellpadding="0" cellspacing="0" style="text-align: center;" bgcolor="#f7f7f7" aria-label="Resources, accessibility and contact info">
+  <tr>
+    <td align="center" valign="top" style="text-align: center; padding-top: 0px; padding-bottom: 0px; padding-left: 15px; padding-right: 15px;">
+      <table role="presentation" class="m-width100" width="600" border="0" align="center" cellpadding="0" cellspacing="0" style="width:600px; min-width:600px; max-width:600px; text-align: center;">
+        <tr>
+          <td valign="top" style="vertical-align: top; font-size: 0;">
+            <table role="presentation" class="m-width100" align="left" cellpadding="0" cellspacing="0" border="0" style="float: left; width: 350px;">
+              <tr>
+                <td align="left" style="padding-top: 30px; padding-bottom: 0; padding-left: 0; padding-right: 0;">
+                  <table role="presentation" class="m-column" align="left" border="0" cellspacing="0" cellpadding="0" style="text-align: left;">
+                    <tr>
+                      <td valign="top" style="padding-bottom:25px;">
+<!-- ====================== START Secondary logo ====================== -->
+
+                        {% if page.logo-footer-alt-url %}
+
+                        <img src="{{ page.logo-footer-alt-url }}" width="280"  alt="{{ page.logo-footer-alt-alt-text }}" style="font-family: 'proximanova', Arial, sans-serif; background-color: #f7f7f7; font-size: 10px; color: #333333;" class="m-logo" />
+
+                        {% else %}
+
+                        <img src="{{ page.logo-url }}" width="280"  alt="{{ page.logo-alt-text }}" style="font-family: 'proximanova', Arial, sans-serif; background-color: #f7f7f7; font-size: 10px; color: #333333;" class="m-logo" />
+
+                        {% endif %}
+<!-- ====================== END Secondary logo ====================== -->
+                      </td>
+                    </tr>
+<!-- ====================== START Contact info ====================== -->
+                    <tr>
+                      <td mc:edit="footer-title" mc:hideable style="font-family: 'proximanova', Arial, sans-serif; font-size: 14px; line-height: 22px; font-weight: bold; color: #333333; padding-top: 0; padding-bottom: 10px; padding-left: 0; padding-right: 0;">
+                        {{ page.email-footer-title }}
+                      </td>
+                    </tr>
+
+                    {% if page.footer-links %}
+                    {% for link in page.footer-links %}
+                    {% if link.link-info %}
+                    {% for link-info in link.link-info %}
+
+                    <tr>
+                      <td mc:hideable style="font-family: 'proximanova', Arial, sans-serif; font-size: 14px; line-height: 22px; font-weight: bold; color: #333333; padding-top: 0; padding-bottom: 0; padding-left: 0; padding-right: 0;">
+                        <span style="font-family: 'proximanova', Arial, sans-serif; font-size: 14px; line-height: 22px; font-weight: normal; color: #333333; padding-top: 0; padding-bottom: 0; padding-left: 0; padding-right: 0;">
+                          <a target="_blank" href="{{ link-info.url }}"
+                            style="font-family: 'proximanova', Arial, sans-serif; color: #333;" title="{{ link-info.title }}">{{ link.name }}</a>
+                        </span>
+                      </td>
+                    </tr>
+                    {% endfor %}
+                    {% endif %}
+                    {% endfor %}
+                    {% endif %}
+<!-- END Contact info ====================================================== -->
+                  </table>
+                </td>
+              </tr>
+            </table>
+            <table role="presentation" class="m-align-left m-width100" align="right" cellpadding="0" cellspacing="0" border="0" style="float: right; width: 200px;" aria-label="Social Media">
+              <tr>
+                <td class="m-no-top-padding" align="left" style="text-align: left; padding-top: 30px; padding-bottom: 25px; padding-left: 0; padding-right: 0;">
+                  <table role="presentation" class="m-table-align-left" align="right" border="0" cellspacing="0" cellpadding="0" style="text-align: right;">
+<!-- START unit social media =============================================== -->
+                  {% if page.footer-social-media %}
+                    <tr>
+                      <td class="m-align-left" style="text-align: right;">
+                        <table role="presentation" border="0" cellspacing="0" cellpadding="0" style="float: right;" class="m-float-left">
+                          <tr>
+                            {% for link in page.footer-social-media %}
+                            {% if link.twitter %}
+                            <td mc:edit="twitter" mc:hideable class="m-align-left" style="text-align: right; padding-top: 0; padding-bottom: 0; padding-right: 0; padding-left: 10px;">
+                              <table role="presentation" border="0" cellspacing="0" cellpadding="0">
+                                <tr>
+                                  <td height="44" width="44">
+                                    <a mc:edit="twitter-url" target="_blank" href="{{ link.twitter }}" aria-label="Twitter" title="Twitter"><img src="https://gallery.mailchimp.com/22b8ab0c79e71d05f85e22573/images/03ebbd0e-7efc-4cf2-a3cb-af67004f5768.png" style="width: 44px; height: 44px; color: {{ page.main-color }}; background-color: #f7f7f7; font-size: 9px;" border="0" width="44" height="44" alt="Twitter" /></a>
+                                  </td>
+                                </tr>
+                              </table>
+                            </td>
+                            {% endif %}
+                            {% if link.instagram %}
+                            <td mc:edit="instagram" mc:hideable class="m-align-left" style="text-align: right; padding-top: 0; padding-bottom: 0; padding-right: 0; padding-left: 10px;">
+                              <table role="presentation" border="0" cellspacing="0" cellpadding="0">
+                                <tr>
+                                  <td height="44" width="44">
+                                    <a mc:edit="instagram-url" target="_blank" href="{{ link.instagram }}" aria-label="Instagram" title="Instagram"><img src="https://mcusercontent.com/22b8ab0c79e71d05f85e22573/images/a71247b6-ae3d-4f70-9dd3-ed1457c1248f.png" style="width: 44px; height: 44px; color: {{ page.main-color }}; background-color: #f7f7f7; font-size: 9px;" border="0" width="44" height="44" alt="Instagram" /></a>
+                                  </td>
+                                </tr>
+                              </table>
+                            </td>
+                            {% endif %}
+                            {% if link.youtube %}
+                            <td mc:edit="youtube" mc:hideable class="m-align-left" style="text-align: right; padding-top: 0; padding-bottom: 0; padding-right: 0; padding-left: 10px;">
+                              <table role="presentation" border="0" cellspacing="0" cellpadding="0">
+                                <tr>
+                                  <td height="44" width="44">
+                                    <a mc:edit="youtube-url" target="_blank" href="{{ link.youtube }}" aria-label="Youtube" title="YouTube"><img src="https://gallery.mailchimp.com/22b8ab0c79e71d05f85e22573/images/aa0dd078-ca74-416e-8cb1-7281b1c46327.png" style="width: 44px; height: 44px; color: {{ page.main-color }}; background-color: #f7f7f7; font-size: 9px;" border="0" width="44" height="44" alt="YouTube" /></a>
+                                  </td>
+                                </tr>
+                              </table>
+                            </td>
+                            {% endif %}
+                            {% endfor %}
+                          </tr>
+                        </table>
+                      </td>
+                    </tr>
+
+                    {% endif %}
+<!-- END unit social media ================================================= -->
+                  </table>
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<table role="presentation" class="footer" width="100%" border="0" align="center" cellpadding="0" cellspacing="0" style="text-align: center;" bgcolor="#f7f7f7" aria-label="Resources, accessibility and contact info">
+  <tr>
+    <td align="center" valign="top" style="text-align: center; padding-top: 0px; padding-bottom: 25px; padding-left: 15px; padding-right: 15px;">
+      <table role="presentation" class="m-width100" width="600" border="0" align="center" cellpadding="0" cellspacing="0" style="width:600px; min-width:600px; max-width:600px; text-align: center;">
+        <tr>
+          <td valign="top" style="vertical-align: top; font-size: 0;">
+            <table role="presentation" class="m-width100" align="left" cellpadding="0" cellspacing="0" border="0" style="float: left; width: 600px;">
+              <tr>
+                <td align="left" style="padding-top: 0px; padding-bottom: 25px; padding-left: 0; padding-right: 0;">
+                  <table role="presentation" class="m-column" align="left" border="0" cellspacing="0" cellpadding="0" style="text-align: left;">
+                    <tr>
+                      <td style="font-family: 'proximanova', Arial, sans-serif; font-size: 14px; line-height: 1.5; color: #333333; padding-top: 15px; padding-bottom: 0; padding-left: 0; padding-right: 0;">
+                        <p class="contact-info" aria-label="Accessibility contact information">If you have a disability and experience difficulty accessing this content, contact the Accessibility Help Line at <a target="_blank"
+                        href="tel:+16142925000" data-rel="external" class="no-wrap"
+                        title="Call Accessibility Help Line" style="color:#333;">614-292-5000</a>.</p>
+                      </td>
+                        </tr>
+                        </table>
+                        </td>
+                        </tr>
+                        </table>
+                        </td>
+                        </tr>
+                        </table>
+                        </td>
+                        </tr>
+                        </table>
+
+<!-- END Footer ============================================================ -->

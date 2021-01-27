@@ -1,0 +1,410 @@
+/* ====================================================================
+Capita - Serif font
+==================================================================== */
+/*
+ * Web Fonts from fontspring.com
+ *
+ * All OpenType features and all extended glyphs have been removed.
+ * Fully installable fonts can be purchased at http://www.fontspring.com
+ *
+ * The fonts included in this stylesheet are subject to the End User License you purchased
+ * from Fontspring. The fonts are protected under domestic and international trademark and
+ * copyright law. You are prohibited from modifying, reverse engineering, duplicating, or
+ * distributing this font software.
+ *
+ * (c) 2010-2012 Fontspring
+ *
+ * The fonts included are copyrighted by the vendor listed below.
+ *
+ * Vendor:      Hoftype
+ * License URL: http://www.fontspring.com/fflicense/hoftype
+ */
+
+/* Capita font-weights that can be specified in CSS
+=======================================================
+
+100 = Extra light
+300 = Light
+400 = Normal
+600 = Medium
+700 = Bold
+900 = Extra bold
+
+*/
+
+
+
+/* Extra light */
+@font-face {
+    font-family: 'capita';
+    src: url('fonts/CapitaXLig.eot');
+    src: url('fonts/CapitaXLig.eot?#iefix') format('embedded-opentype'),
+         url('fonts/CapitaXLig.woff') format('woff'),
+         url('fonts/CapitaXLig.ttf') format('truetype'),
+         url('fonts/CapitaXLig.svg#capita') format('svg');
+    font-weight:lighter;
+    font-weight: 100;
+    font-style: normal;
+}
+/* Extra light italic*/
+@font-face {
+    font-family: 'capita';
+    src: url('fonts/CapitaXLigIta.eot');
+    src: url('fonts/CapitaXLigIta.eot?#iefix') format('embedded-opentype'),
+         url('fonts/CapitaXLigIta.woff') format('woff'),
+         url('fonts/CapitaXLigIta.ttf') format('truetype'),
+         url('fonts/CapitaXLigIta.svg#capita') format('svg');
+    font-weight:lighter;
+    font-weight: 100;
+    font-style: italic;
+}
+
+/* Light */
+@font-face {
+    font-family: 'capita';
+    src: url('fonts/CapitaLig.eot');
+    src: url('fonts/CapitaLig.eot?#iefix') format('embedded-opentype'),
+         url('fonts/CapitaLig.woff') format('woff'),
+         url('fonts/CapitaLig.ttf') format('truetype'),
+         url('fonts/CapitaLig.svg#capita') format('svg');
+    font-weight:light;
+    font-weight: 300;
+    font-style: normal;
+}
+
+/* Light italic */
+@font-face {
+    font-family: 'capita';
+    src: url('fonts/CapitaLigIta.eot');
+    src: url('fonts/CapitaLigIta.eot?#iefix') format('embedded-opentype'),
+         url('fonts/CapitaLigIta.woff') format('woff'),
+         url('fonts/CapitaLigIta.ttf') format('truetype'),
+         url('fonts/CapitaLigIta.svg#capita') format('svg');
+    font-weight:light;
+    font-weight: 300;
+    font-style: italic;
+}
+
+/* Regular */
+@font-face {
+    font-family: 'capita';
+    src: url('fonts/CapitaReg.eot');
+    src: url('fonts/CapitaReg.eot?#iefix') format('embedded-opentype'),
+         url('fonts/CapitaReg.woff') format('woff'),
+         url('fonts/CapitaReg.ttf') format('truetype'),
+         url('fonts/CapitaReg.svg#capita') format('svg');
+    font-weight: normal;
+    font-weight: 400;
+    font-style: normal;
+}
+
+/* Regular italic*/
+@font-face {
+    font-family: 'capita';
+    src: url('fonts/CapitaIta.eot');
+    src: url('fonts/CapitaIta.eot?#iefix') format('embedded-opentype'),
+         url('fonts/CapitaIta.woff') format('woff'),
+         url('fonts/CapitaIta.ttf') format('truetype'),
+         url('fonts/CapitaIta.svg#capita') format('svg');
+    font-weight: normal;
+    font-weight: 400;
+    font-style: italic;
+}
+
+/* Medium */
+@font-face {
+    font-family: 'capita';
+    src: url('fonts/CapitaMed.eot');
+    src: url('fonts/CapitaMed.eot?#iefix') format('embedded-opentype'),
+         url('fonts/CapitaMed.woff') format('woff'),
+         url('fonts/CapitaMed.ttf') format('truetype'),
+         url('fonts/CapitaMed.svg#capita') format('svg');
+    font-weight: 600;
+    font-style: normal;
+}
+
+/* Medium italic*/
+@font-face {
+    font-family: 'capita';
+    src: url('fonts/CapitaMedIta.eot');
+    src: url('fonts/CapitaMedIta.eot?#iefix') format('embedded-opentype'),
+         url('fonts/CapitaMedIta.woff') format('woff'),
+         url('fonts/CapitaMedIta.ttf') format('truetype'),
+         url('fonts/CapitaMedIta.svg#capita') format('svg');
+    font-weight: 600;
+    font-style: italic;
+}
+
+
+/* Bold */
+@font-face {
+    font-family: 'capita';
+    src: url('fonts/CapitaBol.eot');
+    src: url('fonts/CapitaBol.eot?#iefix') format('embedded-opentype'),
+         url('fonts/CapitaBol.woff') format('woff'),
+         url('fonts/CapitaBol.ttf') format('truetype'),
+         url('fonts/CapitaBol.svg#capita') format('svg');
+    font-weight: bold;
+    font-weight: 700;
+    font-style: normal;
+}
+
+/* Bold italic*/
+@font-face {
+    font-family: 'capita';
+    src: url('fonts/CapitaBolIta.eot');
+    src: url('fonts/CapitaBolIta.eot?#iefix') format('embedded-opentype'),
+         url('fonts/CapitaBolIta.woff') format('woff'),
+         url('fonts/CapitaBolIta.ttf') format('truetype'),
+         url('fonts/CapitaBolIta.svg#capita') format('svg');
+    font-weight: bold;
+    font-weight: 700;
+    font-style: italic;
+}
+
+
+/* Extra bold */
+@font-face {
+    font-family: 'capita';
+    src: url('fonts/CapitaXBold.eot');
+    src: url('fonts/CapitaXBold.eot?#iefix') format('embedded-opentype'),
+         url('fonts/CapitaXBold.woff') format('woff'),
+         url('fonts/CapitaXBold.ttf') format('truetype'),
+         url('fonts/CapitaXBold.svg#capita') format('svg');
+    font-weight: bolder;
+    font-weight: 900;
+    font-style: normal;
+}
+
+/* Extra bold italic*/
+@font-face {
+    font-family: 'capita';
+    src: url('fonts/CapitaXBoldIta.eot');
+    src: url('fonts/CapitaXBoldIta.eot?#iefix') format('embedded-opentype'),
+         url('fonts/CapitaXBoldIta.woff') format('woff'),
+         url('fonts/CapitaXBoldIta.ttf') format('truetype'),
+         url('fonts/CapitaXBoldIta.svg#capita') format('svg');
+	font-weight: bolder;
+    font-weight: 900;
+    font-style: italic;
+}
+
+
+
+
+
+
+/* ====================================================================
+ Proxima Nova - Sans-serif font
+==================================================================== */
+/*
+ * Web Fonts from fontspring.com
+ *
+ * All OpenType features and all extended glyphs have been removed.
+ * Fully installable fonts can be purchased at http://www.fontspring.com
+ *
+ * The fonts included in this stylesheet are subject to the End User License you purchased
+ * from Fontspring. The fonts are protected under domestic and international trademark and
+ * copyright law. You are prohibited from modifying, reverse engineering, duplicating, or
+ * distributing this font software.
+ *
+ * (c) 2010-2012 Fontspring
+ *
+ * The fonts included are copyrighted by the vendor listed below.
+ *
+ * Vendor:      Mark Simonson Studio
+ * License URL: http://www.fontspring.com/fflicense/mark-simonson-studio
+ */
+
+/* Proxima Nova font-weights that can be specified in CSS
+=======================================================
+
+100 = Thin
+300 = Light
+400 = Normal
+600 = Semibold
+700 = Bold
+800 = Extra bold
+900 = Black
+
+*/
+
+/* Thin */
+ @font-face {
+    font-family: 'proximanova';
+    src: url('fonts/ProximaNova-Thin.eot');
+    src: url('fonts/ProximaNova-Thin.eot?#iefix') format('embedded-opentype'),
+         url('fonts/ProximaNova-Thin.woff') format('woff'),
+         url('fonts/ProximaNova-Thin.ttf') format('truetype'),
+         url('fonts/ProximaNova-Thin.svg#proximanova') format('svg');
+    font-weight:lighter;
+    font-weight: 100;
+    font-style: normal;
+}
+
+/* Thin italic*/
+@font-face {
+    font-family: 'proximanova';
+    src: url('fonts/ProximaNova-ThinIt.eot');
+    src: url('fonts/ProximaNova-ThinIt.eot?#iefix') format('embedded-opentype'),
+         url('fonts/ProximaNova-ThinIt.woff') format('woff'),
+         url('fonts/ProximaNova-ThinIt.ttf') format('truetype'),
+         url('fonts/ProximaNova-ThinIt.svg#proximanova') format('svg');
+    font-weight:lighter;
+    font-weight: 100;
+    font-style: italic;
+}
+
+/* Light */
+@font-face {
+    font-family: 'proximanova';
+    src: url('fonts/ProximaNova-Light.eot');
+    src: url('fonts/ProximaNova-Light.eot?#iefix') format('embedded-opentype'),
+         url('fonts/ProximaNova-Light.woff') format('woff'),
+         url('fonts/ProximaNova-Light.ttf') format('truetype'),
+         url('fonts/ProximaNova-Light.svg#proximanova') format('svg');
+    font-weight:light;
+    font-weight: 300;
+    font-style: normal;
+}
+
+/* Light italic */
+@font-face {
+    font-family: 'proximanova';
+    src: url('fonts/ProximaNova-LightIt.eot');
+    src: url('fonts/ProximaNova-LightIt.eot?#iefix') format('embedded-opentype'),
+         url('fonts/ProximaNova-LightIt.woff') format('woff'),
+         url('fonts/ProximaNova-LightIt.ttf') format('truetype'),
+         url('fonts/ProximaNova-LightIt.svg#proximanova') format('svg');
+    font-weight:light;
+    font-weight: 300;
+    font-style: italic;
+}
+
+/* Regular */
+@font-face {
+    font-family: 'proximanova';
+    src: url('fonts/ProximaNova-Reg.eot');
+    src: url('fonts/ProximaNova-Reg.eot?#iefix') format('embedded-opentype'),
+         url('fonts/ProximaNova-Reg.woff') format('woff'),
+         url('fonts/ProximaNova-Reg.ttf') format('truetype'),
+         url('fonts/ProximaNova-Reg.svg#proximanova') format('svg');
+    font-weight:normal;
+    font-weight: 400;
+    font-style: normal;
+}
+
+/* Regular italic*/
+@font-face {
+    font-family: 'proximanova';
+    src: url('fonts/ProximaNova-RegIt.eot');
+    src: url('fonts/ProximaNova-RegIt.eot?#iefix') format('embedded-opentype'),
+         url('fonts/ProximaNova-RegIt.woff') format('woff'),
+         url('fonts/ProximaNova-RegIt.ttf') format('truetype'),
+         url('fonts/ProximaNova-RegIt.svg#proximanova') format('svg');
+    font-weight:normal;
+    font-weight: 400;
+    font-style: italic;
+}
+
+/* Semibold */
+@font-face {
+    font-family: 'proximanova';
+    src: url('fonts/ProximaNova-Sbold.eot');
+    src: url('fonts/ProximaNova-Sbold.eot?#iefix') format('embedded-opentype'),
+         url('fonts/ProximaNova-Sbold.woff') format('woff'),
+         url('fonts/ProximaNova-Sbold.ttf') format('truetype'),
+         url('fonts/ProximaNova-Sbold.svg#proximanova') format('svg');
+    font-weight: 600;
+    font-style: normal;
+}
+
+/* Semibold italic*/
+@font-face {
+    font-family: 'proximanova';
+    src: url('fonts/ProximaNova-SboldIt.eot');
+    src: url('fonts/ProximaNova-SboldIt.eot?#iefix') format('embedded-opentype'),
+         url('fonts/ProximaNova-SboldIt.woff') format('woff'),
+         url('fonts/ProximaNova-SboldIt.ttf') format('truetype'),
+         url('fonts/ProximaNova-SboldIt.svg#proximanova') format('svg');
+    font-weight: 600;
+    font-style: italic;
+}
+
+/* Bold */
+@font-face {
+    font-family: 'proximanova';
+    src: url('fonts/ProximaNova-Bold.eot');
+    src: url('fonts/ProximaNova-Bold.eot?#iefix') format('embedded-opentype'),
+         url('fonts/ProximaNova-Bold.woff') format('woff'),
+         url('fonts/ProximaNova-Bold.ttf') format('truetype'),
+         url('fonts/ProximaNova-Bold.svg#proximanova') format('svg');
+    font-weight:bold;
+    font-weight: 700;
+    font-style: normal;
+}
+
+/* Bold italic*/
+@font-face {
+    font-family: 'proximanova';
+    src: url('fonts/ProximaNova-BoldIt.eot');
+    src: url('fonts/ProximaNova-BoldIt.eot?#iefix') format('embedded-opentype'),
+         url('fonts/ProximaNova-BoldIt.woff') format('woff'),
+         url('fonts/ProximaNova-BoldIt.ttf') format('truetype'),
+         url('fonts/ProximaNova-BoldIt.svg#proximanova') format('svg');
+    font-weight:bold;
+    font-weight: 700;
+    font-style: italic;
+}
+
+
+/* Extra Bold */
+@font-face {
+    font-family: 'proximanova';
+    src: url('fonts/ProximaNova-Xbold.eot');
+    src: url('fonts/ProximaNova-Xbold.eot?#iefix') format('embedded-opentype'),
+         url('fonts/ProximaNova-Xbold.woff') format('woff'),
+         url('fonts/ProximaNova-Xbold.ttf') format('truetype'),
+         url('fonts/ProximaNova-Xbold.svg#proximanova') format('svg');
+    font-weight: 800;
+    font-style: normal;
+}
+
+/* Extra Bold italic*/
+@font-face {
+    font-family: 'proximanova';
+    src: url('fonts/ProximaNova-XboldIt.eot');
+    src: url('fonts/ProximaNova-XboldIt.eot?#iefix') format('embedded-opentype'),
+         url('fonts/ProximaNova-XboldIt.woff') format('woff'),
+         url('fonts/ProximaNova-XboldIt.ttf') format('truetype'),
+         url('fonts/ProximaNova-XboldIt.svg#proximanova') format('svg');
+    font-weight: 800;
+    font-style: italic;
+}
+
+
+/* Black */
+@font-face {
+    font-family: 'proximanova';
+    src: url('fonts/ProximaNova-Black.eot');
+    src: url('fonts/ProximaNova-Black.eot?#iefix') format('embedded-opentype'),
+         url('fonts/ProximaNova-Black.woff') format('woff'),
+         url('fonts/ProximaNova-Black.ttf') format('truetype'),
+         url('fonts/ProximaNova-Black.svg#proximanova') format('svg');
+    font-weight:bolder;
+    font-weight: 900;
+    font-style: normal;
+}
+
+/* Black italic */
+@font-face {
+    font-family: 'proximanova';
+    src: url('fonts/ProximaNova-BlackIt.eot');
+    src: url('fonts/ProximaNova-BlackIt.eot?#iefix') format('embedded-opentype'),
+         url('fonts/ProximaNova-BlackIt.woff') format('woff'),
+         url('fonts/ProximaNova-BlackIt.ttf') format('truetype'),
+         url('fonts/ProximaNova-BlackIt.svg#proximanova') format('svg');
+    font-weight:bolder;
+    font-weight: 900;
+    font-style: italic;
+}

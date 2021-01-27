@@ -1,0 +1,20 @@
+{% comment %}
+
+Paragraph element
+
+Inputs:
+
+content: No default.
+mcedit: Needed for mailchimp to properly recognize editable regions in the template. Needs to be unique for each section.
+color: In case an alternate color is needed for the section.
+
+{% endcomment %}
+
+
+<!-- START Paragraph ======================================================= -->
+  <tr>
+    <td mc:edit="{{ include.mcedit }}" class="m-15-25" align="left" valign="top" style="font-family: 'proximanova', Helvetica, Arial, sans-serif; font-size: 17px; line-height: 28px; color: {{ include.color | default: site.text-color }};">
+        {{ include.content }}
+    </td>
+  </tr>
+<!-- END Paragraph ========================================================= -->

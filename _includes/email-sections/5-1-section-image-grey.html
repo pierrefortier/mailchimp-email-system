@@ -1,0 +1,30 @@
+<!--****************************************************************************
+================================================================================
+
+START H2 Header + image + copy + alt button (grey brackground)
+
+================================================================================
+*****************************************************************************-->
+<table role="presentation" mc:repeatable="content" mc:variant="Heading-Image-CTA-Grey" mc:hideable width="100%" border="0" align="center" cellpadding="0" cellspacing="0" style="text-align: center;" bgcolor="#eeeeee">
+  <tr>
+    <td align="center" valign="top" style="padding-top: 30px; padding-right: 15px; padding-bottom: 30px; padding-left: 15px;">
+      <table role="presentation" class="m-width100" width="600" border="0" align="center" cellpadding="0" cellspacing="0" style="width:600px; min-width:600px; max-width:600px; text-align: center;">
+
+        {%- include {{ site.h2 }} mcedit="H2-image-grey"-%}
+
+        {%- include {{ site.image-large }} mcedit="600x400-image-grey-background" -%}
+
+        {%- include {{ site.paragraph }}
+            mcedit="paragraph-image-grey"
+            content="<p>Place copy for secondary stories here. Don't forget to update the label and link to the CTA link below.</p>"
+        -%}
+
+        {%- include {{ site.button-alt }} mcedit="Image-CTA-Alt" -%}
+
+        {%- include {{ site.divider }} -%}
+
+      </table>
+    </td>
+  </tr>
+</table>
+<!-- START H2 Header + image + copy + alt button (grey brackground) ======== -->

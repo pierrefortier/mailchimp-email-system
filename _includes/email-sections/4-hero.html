@@ -1,0 +1,100 @@
+<!--****************************************************************************
+================================================================================
+
+START HERO SECTION
+
+================================================================================
+*****************************************************************************-->
+<table mc:hideable role="presentation" width="100%" border="0" align="center" cellpadding="0" cellspacing="0" style="text-align: center;" bgcolor="#eeeeee">
+
+{%- include {{ site.image-large }} mcedit="Feature-image" -%}
+
+</table>
+
+<!-- START H2 Heading ====================================================== -->
+<table role="presentation" width="100%" border="0" align="center" cellpadding="0" cellspacing="0" style="text-align: center;" bgcolor="#eeeeee">
+  <tr>
+    <td align="center" valign="top" style="padding-top: 0; padding-right: 0; padding-bottom: 0; padding-left: 0;">
+      <table role="presentation" class="m-width100" width="600" border="0" align="center" cellpadding="0" cellspacing="0" style="width:600px; min-width:600px; max-width:600px; text-align: center;" bgcolor="#ffffff">
+        <tr>
+          <td class="m-24-34" align="left" valign="top" style="font-family: 'proximanova', Helvetica, Arial, sans-serif; font-size: 28px; line-height: 38px; font-weight: bold; color: #333333;padding-top:50px;">
+          </td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<table mc:hideable role="presentation" width="100%" border="0" align="center" cellpadding="0" cellspacing="0" style="text-align: center;" bgcolor="#eeeeee">
+  <tr>
+    <td align="center" valign="top" style="padding-top: 0; padding-right: 0; padding-bottom: 0; padding-left: 0;">
+      <table role="presentation" class="m-width100" width="600" border="0" align="center" cellpadding="0" cellspacing="0" style="width:600px; min-width:600px; max-width:600px; text-align: center;" bgcolor="#ffffff">
+        <tr>
+          <td align="center" valign="top" style="padding-top: 0; padding-right: 15px; padding-bottom: 0; padding-left: 15px;">
+            <table role="presentation" class="m-width100" width="450" border="0" align="center" cellpadding="0" cellspacing="0" style="text-align: center;">
+              {%- include {{ site.h2 }} mcedit="H2-hero" -%}
+              {%- include {{ site.divider }} -%}
+            </table>
+          </td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+
+<table role="presentation" width="100%" border="0" align="center" cellpadding="0" cellspacing="0" style="text-align: center;" bgcolor="#eeeeee">
+<tr>
+<td align="center" valign="top" style="padding-top: 0; padding-right: 0; padding-bottom: 30px; padding-left: 0;">
+  <table role="presentation" class="m-width100" width="600" border="0" align="center" cellpadding="0" cellspacing="0" style="width:600px; min-width:600px; max-width:600px; text-align: center;" bgcolor="#ffffff">
+  <tr>
+  <td align="center" valign="top" style="padding-top: 0; padding-right: 15px; padding-bottom: 50px; padding-left: 15px;">
+    <table role="presentation" class="m-width100" width="450" border="0" align="center" cellpadding="0" cellspacing="0" style="text-align: center;">
+<!-- END H2 Heading ======================================================== -->
+
+    {% capture hero-content %}
+    <p>To use this template:</p>
+      <ol>
+        <li>
+          <strong>DO NOT OVERWRITE the contents of this template with your campaign content.</strong> Only content consistent to all campaigns should be represented within the template.
+        </li>
+        <li>
+          Create a new Campaign with the following naming convention "YYYY-MM-DD Campaign Name"
+        </li>
+        <li>
+          Add this template to your new Campaign
+        </li>
+        <li>
+          Delete the placeholder text and enter your content in the Campaign editor
+        </li>
+        <li>
+          Put in a DREQ for formatting email images. Most published videos and news articles already have 600x400-feature or 475x475-email images created for them in Box
+        </li>
+        <li>
+          Add alt text to all links and images. Remember that the alt text should not be redudant with the link's CTA and needs to be descriptive of what will load when the user clicks the link
+        </li>
+        <li>
+          Send a test of the completed campaign to the design team for a quick accessibility evaluation
+        </li>
+      </ol>
+      <p>
+        This is the main hero feature section of the email. Place the most important content here, and be sure to add your CTA link to the button at the bottom of this section.
+      </p>
+    {% endcapture %}
+
+
+    {%- include {{ site.paragraph }}
+      mcedit="hero-content"
+      content=hero-content
+     -%}
+
+
+
+{%- include {{ site.button }} mcedit="Hero-CTA"-%}
+
+    </table>
+  </td>
+  </tr>
+  </table>
+</td>
+</tr>
+</table>
+<!-- END img + text + btn, card ============================================ -->

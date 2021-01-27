@@ -1,0 +1,22 @@
+{% comment %}
+
+Small image element, set to 180x120px.
+
+Placeholder element is laoded throught the `https://placehold.it/` service.
+
+Inputs:
+
+align: Sets the image alignment, values are `left`, `right`, or `center`. Default to `center`.
+mcedit: Needed for mailchimp to properly recognize editable regions in the template. Needs to be unique for each section.
+
+{% endcomment %}
+
+<!-- START 180x120 Image =================================================== -->
+            <table role="presentation" class="m-width100" align="{{ include.align | default: center }}" cellpadding="0" cellspacing="0" border="0" style="float: {{ include.align | default: center }}; width: 180px;">
+              <tr>
+                <td valign="middle" style="font-size: 0; line-height: 0; text-align: center;" align="center">
+                    <img mc:edit="{{ include.mcedit }}" src="https://placehold.it/180x120" width="180" height="120" alt="Add a short, unique description of this image" class="m-image-600" border="0" style="border: none; width: 180px; height: 120px; font-family: 'proximanova', Helvetica, sans-serif; background-color: #ffffff; font-size: 16px; line-height: 20px;" />
+                </td>
+              </tr>
+            </table>
+<!-- END 180x120 Image ===================================================== -->

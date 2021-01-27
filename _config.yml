@@ -1,0 +1,104 @@
+# Welcome to Jekyll!
+#
+# This config file is meant for settings that affect your whole blog, values
+# which you are expected to set up once and rarely edit after that. If you find
+# yourself editing this file very often, consider using Jekyll's data files
+# feature for the data you need to update frequently.
+#
+# For technical reasons, this file is *NOT* reloaded automatically when you use
+# 'bundle exec jekyll serve'. If you change this file, please restart the server process.
+#
+# If you need help with YAML syntax, here are some quick references for you:
+# https://learn-the-web.algonquindesign.ca/topics/markdown-yaml-cheat-sheet/#yaml
+# https://learnxinyminutes.com/docs/yaml/
+#
+# Site settings
+# These are used to personalize your new site. If you look in the HTML files,
+# you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
+# You can create any custom variable you would like, and they will be accessible
+# in the templates via {{ site.myvariable }}.
+
+title: Marcomm Email Template System
+email: fortier.20@osu.edu
+description: >- # this means to ignore newlines until "baseurl:"
+  Write an awesome description for your new site here. You can edit this
+  line in _config.yml. It will appear in your document head meta (for
+  Google search results) and in your feed.xml site description.
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "" # the base hostname & protocol for your site, e.g. http://example.com
+twitter_username:
+github_username:
+
+# Build settings
+theme: minima
+plugins:
+  - jekyll-feed
+
+defaults:
+  -
+    scope:
+      path: "email"
+      type: "pages"
+    values:
+      main-color: "#bb0000"
+      alt-color: "#990000"
+      logo-url: https://osu.edu/assets/web/email/assets/logo-OhioState-horiz@2x.png
+      logo-alt-text: The Ohio State University
+      logo-width: 280
+      email-title: "H1 Email Title"
+      email-subheading: "Sub-Heading - Optional"
+      email-footer-title: "Office of the Chief Information Officer <br/>Office of Distance Education and eLearning <br/>Enterprise Security"
+      footer-links:
+        - name: "IT Self Service"
+          link-info:
+          - url: https://osuitsm.service-now.com/selfservice/
+            title: Support Resources
+        - name: "IT Support Locations"
+          link-info:
+          - url: https://ocio.osu.edu/help/locations
+            title: Locate us
+        - name: "servicedesk@osu.edu"
+          link-info:
+          - url: mailto:servicedesk@osu.edu
+            title: Email us
+        - name: "614-688-4357 (HELP)"
+          link-info:
+          - url: tel:+16146884357
+            title: Call for IT support
+      footer-social-media:
+        - twitter: https://twitter.com/TechOhioState
+        - instagram: https://www.instagram.com/techohiostate/
+        - youtube: https://www.youtube.com/channel/UC6ga6ob19_0SZMYpHryeFEA?view_as=subscriber
+
+# Component link variables
+
+text-color: "#333333"
+button: email-sections/components/button.html
+button-alt: email-sections/components/button-alt.html
+h2: email-sections/components/H2.html
+h3: email-sections/components/H3.html
+paragraph: email-sections/components/paragraph.html
+image-large: email-sections/components/image-large.html
+image-small: email-sections/components/image-small.html
+divider: email-sections/components/divider.html
+
+
+# Exclude from processing.
+# The following items will not be processed, by default.
+# Any item listed under the `exclude:` key here will be automatically added to
+# the internal "default list".
+#
+# Excluded items can be processed by explicitly listing the directories or
+# their entries' file path in the `include:` list.
+#
+# exclude:
+#   - .sass-cache/
+#   - .jekyll-cache/
+#   - gemfiles/
+#   - Gemfile
+#   - Gemfile.lock
+#   - node_modules/
+#   - vendor/bundle/
+#   - vendor/cache/
+#   - vendor/gems/
+#   - vendor/ruby/

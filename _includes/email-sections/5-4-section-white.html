@@ -1,0 +1,28 @@
+<!--****************************************************************************
+================================================================================
+
+START H2 Header + copy + alt button (white brackground)
+
+================================================================================
+*****************************************************************************-->
+<table role="presentation" mc:hideable mc:repeatable="content" mc:variant="Heading-CTA-White" width="100%" border="0" align="center" cellpadding="0" cellspacing="0" style="text-align: center;" bgcolor="#ffffff">
+  <tr>
+    <td align="center" valign="top" style="padding-top: 30px; padding-right: 15px; padding-bottom: 30px; padding-left: 15px;">
+      <table role="presentation" class="m-width100" width="600" border="0" align="center" cellpadding="0" cellspacing="0" style="width:600px; min-width:600px; max-width:600px; text-align: center;">
+
+        {%- include {{ site.h2}} mcedit="H2-white"-%}
+
+        {%- include {{ site.paragraph }}
+            mcedit="paragraph-white"
+            content="<p>Place copy for secondary stories here. Don't forget to update the label and link to the CTA link below.</p>"
+        -%}
+
+        {%- include {{ site.button }} mcedit="CTA" -%}
+
+        {%- include {{ site.divider }} -%}
+
+      </table>
+    </td>
+  </tr>
+</table>
+<!-- START H2 Header + copy + alt button (white brackground) =============== -->

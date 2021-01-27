@@ -1,0 +1,22 @@
+{% comment %}
+
+H2 header element
+
+Inputs:
+
+content: Default is "H2 Heading".
+mcedit: Needed for mailchimp to properly recognize editable regions in the template. Needs to be unique for each section.
+color: In case an alternate color is needed for the section.
+
+{% endcomment %}
+
+
+<!-- START H2 Heading ====================================================== -->
+<tr>
+  <td class="m-18-28" align="left" valign="top" style="font-family: 'proximanova', Helvetica, Arial, sans-serif; font-size: 22px; font-weight: bold; line-height: 28px; color: {{ include.color | default: site.text-color }};">
+    <h2 mc:edit="{{ include.mcedit }}" style="font-family: 'proximanova', Helvetica, Arial, sans-serif; font-size: 28px; font-weight: bold; line-height: 38px; color: {{ include.color | default: site.text-color }}; margin: 0; padding-top: 0; padding-right: 0; padding-left: 0;">
+      {{ include.content | default: "H2 Heading" }}
+    </h2>
+  </td>
+</tr>
+<!-- END H2 Heading ======================================================== -->
