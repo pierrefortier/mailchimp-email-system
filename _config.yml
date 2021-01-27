@@ -33,6 +33,7 @@ github_username:
 theme: minima
 plugins:
   - jekyll-feed
+  - jekyll-relative-links
 
 defaults:
   -
